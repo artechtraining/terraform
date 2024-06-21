@@ -1,12 +1,12 @@
 provider "aws" {
-	region = "us-east-2a"
-	access_key = "AKIA6GBMARVOFKVVDLHD"
-	secret_key     = "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"
+	region = "ap-south-1a"
+	access_key = "AKIA47CRV5E4DE5HTV6Y"
+	secret_key     = "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"
 }
 resource "aws_instance" "web" {
-  ami           = "ami-05a36e1502605b4aa"
+  ami           = "ami-0763cf792771fe1bd"
   instance_type = "t2.nano"
-  key_name = "jenkins"
+  key_name = "sunkara"
 
   tags = {
     Name = "HelloWorld"
